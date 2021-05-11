@@ -1,0 +1,39 @@
+body {
+	 background: white;
+ }
+ 
+ h1{
+   color:#FF00FF
+   
+ }
+ table{
+   background:#000000;
+   width:200px;
+   height:300px;
+   font-size: 20px;
+ }
+ 
+ .shahin input {
+   background:#FF8C00;
+   border-radius :25px;
+   height: 50px;
+   width: 50px;
+   font-size:20px;
+ }
+ 
+ .samiur input {
+   background:blue;
+   border-radius :25px;
+   height: 50px;
+   width: 50px;
+ color:white;
+   font-size:20px;
+   
+ }
+ 
+ 
+ .mahin input {
+   width: 170px;
+ color:#000000;
+font-size: 20px;
+ }

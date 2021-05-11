@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+	 <title>calculator</title>
+	 <meta charset="UTF-8"/>
+	 <link rel="stylesheet" href="calculator.css" type="text/css"/>
+	 <Center>
+ <h1 >This is created  by samiur shahin</h1> 
+ </head>
+	 <body>
+	
+	<table>
+	  <tr class="mahin">
+	  
+	  <th ><input type="number" placeholder="number 1" id="one"/></th>
+	  	  
+	  	  <th><input type="number" placeholder="number 2" id="two"/></th>
+	  	  	  
+	  	  	  <th><input type="number" placeholder="result" id="there"/></th>
+	  </tr>
+	  
+	  
+	  <tr class="shahin">
+	  <th><input type="submit" value=" 1"id="1" onclick="onee()"/></th>
+	  	
+	     <th><input type="submit" value ="2" id="2" onclick="twoo()"/></th>
+	  	  	  
+	  	  	  <th><input type="submit" value="3" id="3" onclick="there()"/></th>
+	  </tr>
+	  
+	  <tr class="shahin">
+	  <th><input type="submit" value="4" id="4" onclick="four()"/></th>
+	  	 
+	  	  <th><input type="submit" value="5"id="5" onclick="five()"/></th>
+	  	  	 
+	  	  	  <th><input type="submit" value="6" id="6" /></th>
+	  </tr>
+	  
+	  <tr class="shahin">
+	  <th><input type="submit" value="7" id="7"/>
+	  </th>
+	  	  <th><input type="submit" value="8" id="8"/></th>
+	  	  	  <th><input type="submit" value="9" id="9"/></th>
+	  </tr>
+       <tr class="samiur">
+	  <th><input type="submit" value="+"/  style=" background:blue; color:white; height:50px; width:50px; border-radius:50%; font-size:20px;" id="+" onclick="sum()"></th>
+	  <th><input type="submit" value="0"style=" background:#FF8C00; color:black; height:50px; width:50px; border-radius:50%; font-size:20px;" id="0"></th>
+	  	  	 
+	  	  	  <th><input type="submit" 
+	  	  	value="-" id="-" onclick="sub()"/></th>
+	  </tr> 
+
+        <tr class="samiur">
+	  <th><input type="submit" value="*" id="*" onclick="mal()"/>
+	  </th>
+	  	  
+	  	  <th><input type="submit" value="/"id="/" onclick="div()"/></th>
+	  	  	  
+	  	  	  <th><input type="submit" value="%" id="%" onclick="mod()"/></tr>
+     <tr>
+	  <th><input type="submit" value="samiur shahin"style="background:black; color:white; font-size:20px; " /></th>
+	  	  
+	  	  <th><input type="submit" value="Off" style="background:red; color:white; height:50px; width:50px; border-radius:50%; font-size:20px;" id="off" onclick="off()" /></th>
+	  	  	  
+	  	  	  <th><input type="submit" value="On" style=" 
+	  	  	  background:green; 
+	  	  	  color:white; height:50px; width:50px; border-radius:50%;  font-size:20px;" id="on" onclick="on()"/></th>
+	  </tr>
+
+	</table>
+
+	
+	
+	
+	</center>
+	
+	
+	<script>
+	    
+	    function off(){
+	
+            
+           document.getElementById('one').disabled=true;
+
+document.getElementById('two').disabled=true;
+document.getElementById('there').disabled=true;
+document.getElementById('1').disabled=true;
+document.getElementById('2').disabled=true;
+document.getElementById('3').disabled=true;
+document.getElementById('4').disabled=true;
+	   
+document.getElementById('5').disabled=true;
+	   
+document.getElementById('6').disabled=true;
+	   
+document.getElementById('7').disabled=true;
+document.getElementById('8').disabled=true;
+
+document.getElementById('9').disabled=true;
+document.getElementById('0').disabled=true;
+document.getElementById('+').disabled=true;    
+document.getElementById('-').disabled=true;
+document.getElementById('/').disabled=true;
+document.getElementById('%').disabled=true;
+document.getElementById('*').disabled=true;
+
+	    }
+	    
+	    
+  
+	    function on(){
+document.getElementById('one').disabled=false;
+            
+           document.getElementById('one').disabled=false;
+
+document.getElementById('two').disabled=false;
+document.getElementById('there').disabled=false;
+document.getElementById('1').disabled=false;
+document.getElementById('2').disabled=false;
+document.getElementById('3').disabled=false;
+document.getElementById('4').disabled=false;
+	   
+document.getElementById('5').disabled=false;
+	   
+document.getElementById('6').disabled=false;
+	   
+document.getElementById('7').disabled=false;
+document.getElementById('8').disabled=false;
+
+document.getElementById('9').disabled=false;
+document.getElementById('0').disabled=false;
+document.getElementById('+').disabled=false;    
+document.getElementById('-').disabled=false;
+document.getElementById('/').disabled=false;
+document.getElementById('%').disabled=false;
+document.getElementById('*').disabled=false;
+	    }
+	    
+	    
+	    function onee(){
+	document.getElementById("one").value=1;
+	    }
+function twoo(){
+	document.getElementById("one").value=2;
+	    }
+
+function there(){
+	document.getElementById("one").value=3;
+	    }
+function four(){
+	document.getElementById("one").value=4;
+	    }
+function five(){
+	document.getElementById("one").value=5;
+	    }
+
+function sum(){
+    let a=parseInt(document.getElementById("one").value);
+    let b=parseInt(document.getElementById("two").value);
+    c=a+b
+   parseInt(document.getElementById("there").value=c);
+    
+}
+function sum(){
+    let a=parseInt(document.getElementById("one").value);
+    let b=parseInt(document.getElementById("two").value);
+    c=a+b
+   parseInt(document.getElementById("there").value=c);
+    
+}
+
+function sub(){
+    let a=parseInt(document.getElementById("one").value);
+    let b=parseInt(document.getElementById("two").value);
+    c=a-b
+   parseInt(document.getElementById("there").value=c);
+    
+}
+
+function mal(){
+    let a=parseInt(document.getElementById("one").value);
+    let b=parseInt(document.getElementById("two").value);
+    c=a*b
+   parseInt(document.getElementById("there").value=c);
+    
+}
+
+function div(){
+    let a=parseInt(document.getElementById("one").value);
+    let b=parseInt(document.getElementById("two").value);
+    c=a/b
+   parseInt(document.getElementById("there").value=c);
+    
+}
+
+function mod(){
+    let a=parseInt(document.getElementById("one").value);
+    let b=parseInt(document.getElementById("two").value);
+    c=a%b
+   parseInt(document.getElementById("there").value=c);
+    
+}
+
+
+	</script>
+	 </body>
+
+ </html>
